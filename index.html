@@ -34,14 +34,22 @@ journal:"Advanced Energy Materials, 9, 1803963",doi:"10.1002/aenm.201803963",
 summary:"本文提出由径向取向单晶纳米片构成的 NCM811 正极。该结构使活性 {010} 晶面有序外露，并形成由颗粒表面贯通中心的 Li+ 扩散通道；一致取向还可协调充放电体积变化，抑制晶界应力与微裂纹。材料在 5C 下实现 152.7 mAh g−1，1C 循环 300 圈保持 95.5% 容量。",
 materials:["正极材料","NMC","NCM811","富镍层状氧化物"],
 modifications:["调节颗粒形貌","一次颗粒取向","单晶纳米片"],
-mechanisms:["Li+ 扩散","晶界应力","微裂纹","界面阻抗"]}];
-const taxonomy={materials:{name:"材料体系",items:["正极材料","NMC","NCM811","LFP","NMA"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向"]},mechanisms:{name:"探索机制",items:["Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化"]}};
+mechanisms:["Li+ 扩散","晶界应力","微裂纹","界面阻抗"],type:"研究型论文"},
+{id:"ees-2021-reducing-cobalt-ev",year:2021,
+title:"Reducing cobalt from lithium-ion batteries for the electric vehicle era",
+authors:"Hoon-Hee Ryu; H. Hohyun Sun; Seung-Taek Myung; Chong S. Yoon; Yang-Kook Sun",
+journal:"Energy & Environmental Science, 14, 844–852",doi:"10.1039/D0EE03581E",
+summary:"本文以电动车应用为目标，比较无钴 NM、低钴高镍 NCM/NCA 与 LFP/LMFP 正极在成本、能量密度、寿命、快充与安全之间的权衡。作者认为未来将是多路线共存：高镍低钴材料适合高性能 EV，NM 面向部分成本敏感市场，LFP 适合安全和寿命优先场景。",
+materials:["正极材料","NMC/NCM","NM","LFP","LMFP"],
+modifications:["掺杂","包覆","调节颗粒形貌","微结构工程"],
+mechanisms:["Co供应链与成本","高镍相变","晶界应力","微裂纹","Li+ 扩散","导电网络"],type:"综述"}];
+const taxonomy={types:{name:"文献类型",items:["综述","研究型论文"]},materials:{name:"材料体系",items:["正极材料","NMC","NMC/NCM","NCM811","NM","LFP","LMFP","NMA"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向","微结构工程"]},mechanisms:{name:"探索机制",items:["Co供应链与成本","高镍相变","Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化","导电网络"]}};
 let filters=new Set();
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-function allTags(p){return [...p.materials,...p.modifications,...p.mechanisms]}
+function allTags(p){return [p.type,...p.materials,...p.modifications,...p.mechanisms]}
 function renderTaxonomy(){const host=document.querySelector("#taxonomy");host.innerHTML=Object.entries(taxonomy).map(([key,g])=>'<div class="group"><h3>'+g.name+'</h3><div class="chips">'+g.items.map(item=>'<button class="chip '+(filters.has(item)?"active":"")+'" data-tag="'+esc(item)+'">'+esc(item)+'</button>').join("")+"</div></div>").join("");host.querySelectorAll("[data-tag]").forEach(b=>b.onclick=()=>{filters.has(b.dataset.tag)?filters.delete(b.dataset.tag):filters.add(b.dataset.tag);render()})}
 function filtered(){const q=document.querySelector("#search").value.trim().toLowerCase(),y=document.querySelector("#year").value;return papers.filter(p=>(!y||String(p.year)===y)&&(!q||JSON.stringify(p).toLowerCase().includes(q))&&(!filters.size||[...filters].every(tag=>allTags(p).includes(tag))))}
-function renderPapers(rows){document.querySelector("#count").textContent="当前显示 "+rows.length+" 篇文献"+(filters.size?" · 已筛选："+[...filters].join("、"):"");document.querySelector("#papers").innerHTML=rows.length?rows.map(p=>'<article class="paper"><h2>'+esc(p.title)+'</h2><div class="meta">'+p.year+" · "+esc(p.journal)+"<br>"+esc(p.authors)+'</div><p>'+esc(p.summary)+'</p><a target="_blank" rel="noreferrer" href="https://doi.org/'+esc(p.doi)+'">查看 DOI</a><div class="tags">'+p.materials.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+p.modifications.map(x=>'<span class="tag mod">'+esc(x)+'</span>').join("")+p.mechanisms.map(x=>'<span class="tag mech">'+esc(x)+'</span>').join("")+'</div><details><summary>归类依据</summary><p class="muted">材料：'+esc(p.materials.join("、"))+"；改性："+esc(p.modifications.join("、"))+"；机制："+esc(p.mechanisms.join("、"))+'</p></details></article>').join(""):'<div class="panel empty">没有匹配的文献。可清除筛选或更换关键词。</div>'}
+function renderPapers(rows){document.querySelector("#count").textContent="当前显示 "+rows.length+" 篇文献"+(filters.size?" · 已筛选："+[...filters].join("、"):"");document.querySelector("#papers").innerHTML=rows.length?rows.map(p=>'<article class="paper"><h2>'+esc(p.title)+'</h2><div class="meta">'+p.year+" · "+esc(p.journal)+"<br>"+esc(p.authors)+'</div><p>'+esc(p.summary)+'</p><a target="_blank" rel="noreferrer" href="https://doi.org/'+esc(p.doi)+'">查看 DOI</a><div class="tags"><span class="tag">'+esc(p.type)+'</span>'+p.materials.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+p.modifications.map(x=>'<span class="tag mod">'+esc(x)+'</span>').join("")+p.mechanisms.map(x=>'<span class="tag mech">'+esc(x)+'</span>').join("")+'</div><details><summary>归类依据</summary><p class="muted">类型：'+esc(p.type)+"；材料："+esc(p.materials.join("、"))+"；改性："+esc(p.modifications.join("、"))+"；机制："+esc(p.mechanisms.join("、"))+'</p></details></article>').join(""):'<div class="panel empty">没有匹配的文献。可清除筛选或更换关键词。</div>'}
 function drawGraph(rows){
  const svg=document.querySelector("#graph"),w=900,h=420;
  const selected=[...filters];
