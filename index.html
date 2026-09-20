@@ -19,7 +19,7 @@
 <div class="layout">
 <aside class="panel taxonomy"><h2>研究方向分类</h2><div id="taxonomy"></div><button id="reset" type="button">清除筛选</button></aside>
 <main>
-<section class="panel network"><h2>文献关联谱图</h2><p class="muted">中心为论文；连线表示该论文涉及的材料体系、改性手段与机制主题。点击左侧分类可聚焦关联文献。</p><svg id="graph" viewBox="0 0 900 420" role="img" aria-label="文献与研究主题关联谱图"></svg><div class="legend"><span><i class="dot" style="background:#1c5fcb"></i>论文</span><span><i class="dot" style="background:#147a57"></i>材料体系</span><span><i class="dot" style="background:#a85e00"></i>改性手段</span><span><i class="dot" style="background:#6951a8"></i>机制主题</span></div></section>
+<section class="panel network"><h2>文献关联谱图</h2><p class="muted">点击左侧任一分类后，图中只保留该类全部论文；论文间共享的材料、改性或机制标签越多，连线越深、距离越近。</p><svg id="graph" viewBox="0 0 900 420" role="img" aria-label="文献与研究主题关联谱图"></svg><div class="legend"><span><i class="dot" style="background:#1c5fcb"></i>论文</span><span><i class="dot" style="background:#147a57"></i>材料体系</span><span><i class="dot" style="background:#a85e00"></i>改性手段</span><span><i class="dot" style="background:#6951a8"></i>机制主题</span></div></section>
 <p id="count" class="summary"></p><section id="papers"></section>
 </main>
 </div>
@@ -42,8 +42,29 @@ function allTags(p){return [...p.materials,...p.modifications,...p.mechanisms]}
 function renderTaxonomy(){const host=document.querySelector("#taxonomy");host.innerHTML=Object.entries(taxonomy).map(([key,g])=>'<div class="group"><h3>'+g.name+'</h3><div class="chips">'+g.items.map(item=>'<button class="chip '+(filters.has(item)?"active":"")+'" data-tag="'+esc(item)+'">'+esc(item)+'</button>').join("")+"</div></div>").join("");host.querySelectorAll("[data-tag]").forEach(b=>b.onclick=()=>{filters.has(b.dataset.tag)?filters.delete(b.dataset.tag):filters.add(b.dataset.tag);render()})}
 function filtered(){const q=document.querySelector("#search").value.trim().toLowerCase(),y=document.querySelector("#year").value;return papers.filter(p=>(!y||String(p.year)===y)&&(!q||JSON.stringify(p).toLowerCase().includes(q))&&(!filters.size||[...filters].every(tag=>allTags(p).includes(tag))))}
 function renderPapers(rows){document.querySelector("#count").textContent="当前显示 "+rows.length+" 篇文献"+(filters.size?" · 已筛选："+[...filters].join("、"):"");document.querySelector("#papers").innerHTML=rows.length?rows.map(p=>'<article class="paper"><h2>'+esc(p.title)+'</h2><div class="meta">'+p.year+" · "+esc(p.journal)+"<br>"+esc(p.authors)+'</div><p>'+esc(p.summary)+'</p><a target="_blank" rel="noreferrer" href="https://doi.org/'+esc(p.doi)+'">查看 DOI</a><div class="tags">'+p.materials.map(x=>'<span class="tag">'+esc(x)+'</span>').join("")+p.modifications.map(x=>'<span class="tag mod">'+esc(x)+'</span>').join("")+p.mechanisms.map(x=>'<span class="tag mech">'+esc(x)+'</span>').join("")+'</div><details><summary>归类依据</summary><p class="muted">材料：'+esc(p.materials.join("、"))+"；改性："+esc(p.modifications.join("、"))+"；机制："+esc(p.mechanisms.join("、"))+'</p></details></article>').join(""):'<div class="panel empty">没有匹配的文献。可清除筛选或更换关键词。</div>'}
-function drawGraph(rows){const svg=document.querySelector("#graph");const w=900,h=420;let nodes=[],edges=[];const paperX=190,ys=rows.map((p,i)=>100+i*130);rows.forEach((p,i)=>{nodes.push({id:p.id,label:p.title.length>34?p.title.slice(0,34)+"…":p.title,x:paperX,y:ys[i],kind:"paper"});[["materials",610,120],["modifications",610,235],["mechanisms",610,350]].forEach(([field,x,base])=>p[field].forEach((tag,j)=>{let id=field+"-"+tag;if(!nodes.some(n=>n.id===id))nodes.push({id,label:tag,x,y:base+j*28,kind:field});edges.push([p.id,id])}))});let color={paper:"#1c5fcb",materials:"#147a57",modifications:"#a85e00",mechanisms:"#6951a8"};let byId=Object.fromEntries(nodes.map(n=>[n.id,n]));svg.innerHTML='<title>文献关联谱图</title><desc>显示当前筛选文献与材料、改性和机制标签的关联。</desc>'+edges.map(([a,b])=>'<line x1="'+byId[a].x+'" y1="'+byId[a].y+'" x2="'+byId[b].x+'" y2="'+byId[b].y+'" stroke="#c9d4e8" stroke-width="1.5"/>').join("")+nodes.map(n=>'<g><circle cx="'+n.x+'" cy="'+n.y+'" r="'+(n.kind==="paper"?11:8)+'" fill="'+color[n.kind]+'"/><text x="'+(n.x+15)+'" y="'+(n.y+4)+'" font-size="13" fill="#14213d">'+esc(n.label)+'</text></g>').join("");}
-function render(){const rows=filtered();renderTaxonomy();renderPapers(rows);drawGraph(rows)}
+function drawGraph(rows){
+ const svg=document.querySelector("#graph"),w=900,h=420;
+ const selected=[...filters];
+ const similarity=(a,b)=>{
+   const A=new Set(allTags(a).filter(t=>!selected.includes(t))),B=new Set(allTags(b).filter(t=>!selected.includes(t)));
+   const shared=[...A].filter(t=>B.has(t));const union=new Set([...A,...B]);
+   return {score:union.size?shared.length/union.size:0,shared};
+ };
+ if(!rows.length){svg.innerHTML='<text x="450" y="210" text-anchor="middle" fill="#667085" font-size="15">没有可绘制的文献</text>';return}
+ if(rows.length===1){const p=rows[0];svg.innerHTML='<title>文献关联谱图</title><desc>当前筛选仅有一篇文献，累积更多同类论文后将显示论文之间的关联距离。</desc><circle cx="450" cy="210" r="18" fill="#1c5fcb"/><text x="450" y="250" text-anchor="middle" fill="#14213d" font-size="14">'+esc(p.title.length>56?p.title.slice(0,56)+"…":p.title)+'</text><text x="450" y="278" text-anchor="middle" fill="#667085" font-size="13">当前筛选仅有 1 篇文献；继续归档同类论文后将显示距离与连线。</text>';return}
+ const nodes=rows.map((p,i)=>({p,x:170+(i%4)*190,y:110+Math.floor(i/4)*145,vx:0,vy:0}));
+ const links=[];for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){const s=similarity(nodes[i].p,nodes[j].p);if(s.score>0)links.push({a:nodes[i],b:nodes[j],...s})}
+ for(let step=0;step<180;step++){
+   for(let i=0;i<nodes.length;i++)for(let j=i+1;j<nodes.length;j++){let a=nodes[i],b=nodes[j],dx=b.x-a.x,dy=b.y-a.y,d=Math.max(1,Math.hypot(dx,dy)),f=4200/(d*d);a.vx-=f*dx/d;a.vy-=f*dy/d;b.vx+=f*dx/d;b.vy+=f*dy/d}
+   links.forEach(l=>{let dx=l.b.x-l.a.x,dy=l.b.y-l.a.y,d=Math.max(1,Math.hypot(dx,dy)),target=330-190*l.score,f=(d-target)*0.018;l.a.vx+=f*dx/d;l.a.vy+=f*dy/d;l.b.vx-=f*dx/d;l.b.vy-=f*dy/d});
+   nodes.forEach(n=>{n.vx*=.72;n.vy*=.72;n.x=Math.max(55,Math.min(w-55,n.x+n.vx));n.y=Math.max(55,Math.min(h-55,n.y+n.vy))})
+ }
+ const label=p=>p.title.length>30?p.title.slice(0,30)+"…":p.title;
+ svg.innerHTML='<title>同类文献关联谱图</title><desc>节点代表当前分类中的论文；共同材料、改性或机制标签越多的论文，连线越深且距离越近。</desc>'+
+ links.map(l=>'<line x1="'+l.a.x+'" y1="'+l.a.y+'" x2="'+l.b.x+'" y2="'+l.b.y+'" stroke="#7aa3e8" stroke-opacity="'+(.25+.7*l.score)+'" stroke-width="'+(1+4*l.score)+'"><title>关联度 '+Math.round(l.score*100)+'%；共同标签：'+esc(l.shared.join("、"))+'</title></line>').join("")+
+ nodes.map(n=>'<g><circle cx="'+n.x+'" cy="'+n.y+'" r="13" fill="#1c5fcb"><title>'+esc(n.p.title)+'</title></circle><text x="'+(n.x+18)+'" y="'+(n.y+4)+'" fill="#14213d" font-size="12">'+esc(label(n.p))+'</text></g>').join("")+
+ '<text x="22" y="28" fill="#667085" font-size="13">连线强度与节点距离由共同材料、改性手段和机制标签的 Jaccard 关联度计算</text>';
+}function render(){const rows=filtered();renderTaxonomy();renderPapers(rows);drawGraph(rows)}
 const ySel=document.querySelector("#year");[...new Set(papers.map(p=>p.year))].sort((a,b)=>b-a).forEach(y=>ySel.insertAdjacentHTML("beforeend",'<option value="'+y+'">'+y+"</option>"));document.querySelector("#search").oninput=render;ySel.onchange=render;document.querySelector("#reset").onclick=()=>{filters.clear();document.querySelector("#search").value="";ySel.value="";render()};render();
 </script>
 </body></html>
