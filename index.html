@@ -42,8 +42,16 @@ journal:"Energy & Environmental Science, 14, 844–852",doi:"10.1039/D0EE03581E"
 summary:"本文以电动车应用为目标，比较无钴 NM、低钴高镍 NCM/NCA 与 LFP/LMFP 正极在成本、能量密度、寿命、快充与安全之间的权衡。作者认为未来将是多路线共存：高镍低钴材料适合高性能 EV，NM 面向部分成本敏感市场，LFP 适合安全和寿命优先场景。",
 materials:["正极材料","NMC/NCM","NM","LFP","LMFP"],
 modifications:["掺杂","包覆","调节颗粒形貌","微结构工程"],
-mechanisms:["Co供应链与成本","高镍相变","晶界应力","微裂纹","Li+ 扩散","导电网络"],type:"综述"}];
-const taxonomy={types:{name:"文献类型",items:["综述","研究型论文"]},materials:{name:"材料体系",items:["正极材料","NMC","NMC/NCM","NCM811","NM","LFP","LMFP","NMA"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向","微结构工程"]},mechanisms:{name:"探索机制",items:["Co供应链与成本","高镍相变","Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化","导电网络"]}};
+mechanisms:["Co供应链与成本","高镍相变","晶界应力","微裂纹","Li+ 扩散","导电网络"],type:"综述"},
+{id:"eem-2024-ni-rich-ml-design",year:2024,
+title:"Ab Initio Design of Ni-Rich Cathode Material with Assistance of Machine Learning for High Energy Lithium-Ion Batteries",
+authors:"Xinyu Zhang; Daobin Mu; Shijie Lu; Yuanxing Zhang; Yuxiang Zhang; Zhuolin Yang; Zhikun Zhao; Borong Wu; Feng Wu",
+journal:"Energy & Environmental Materials, 7, e12744",doi:"10.1002/eem2.12744",
+summary:"本文将热力学平衡、颗粒生长模型和 CFD 与少量 NCM811 前驱体共沉淀实验、数字形貌图和 PMD-LSTM 耦合，学习目标形貌与 pH、氨浓度、搅拌速度、反应时间之间的映射，再在 10 L 反应器反向设计前驱体并烧结验证。最佳小颗粒 NCM811 在 0.1C 为 206.1 mAh g−1、5C 为 151 mAh g−1，1C 循环 200 圈保持约 82–83%。",
+materials:["正极材料","NMC","NCM811","富镍层状氧化物"],
+modifications:["调节颗粒形貌","共沉淀工艺优化","机器学习辅助设计","反向设计"],
+mechanisms:["成核与生长","Li+ 扩散","颗粒应力","流体混合"],type:"研究型论文"}];
+const taxonomy={types:{name:"文献类型",items:["综述","研究型论文"]},materials:{name:"材料体系",items:["正极材料","NMC","NMC/NCM","NCM811","NM","LFP","LMFP","NMA","富镍层状氧化物"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向","微结构工程","共沉淀工艺优化","机器学习辅助设计","反向设计"]},mechanisms:{name:"探索机制",items:["Co供应链与成本","高镍相变","Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化","导电网络","成核与生长","颗粒应力","流体混合"]}};
 let filters=new Set();
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function allTags(p){return [p.type,...p.materials,...p.modifications,...p.mechanisms]}
