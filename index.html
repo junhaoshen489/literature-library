@@ -58,8 +58,16 @@ journal:"Advanced Energy Materials, 16, e70989",doi:"10.1002/aenm.70989",
 summary:"本文系统检验四项围绕 NMC/NCA 的常见绝对化说法：Ni 含量与能量密度、LNO 式一级相变、LFP 与 NMC 全电池循环寿命、以及富锂富锰层状氧化物（LMR）的下一代定位。作者以同等容量/不同 UCV 的能量计算、operando XRD 两相共存判据与软包全电池数据说明，材料评价须共同考虑截止电压、平均电压、晶体/压实密度、负极配平、电解液、极化和寿命；高Ni、中Ni、LFP、LMR不存在脱离工作条件的绝对优劣。",
 materials:["正极材料","NMC","高镍NMC","中镍NMC","NCA","LFP","富锂富锰层状氧化物(LMR)"],
 modifications:[],mechanisms:["高压相变","H2-H3残余特征"],
-topics:["能量密度","循环寿命","电压极化","电压窗口","全电池评价"],type:"综述",articleKind:"Perspective（观点文章）"}];
-const taxonomy={types:{name:"文献类型",items:["综述","研究型论文","Perspective（观点文章）"]},materials:{name:"材料体系",items:["正极材料","NMC","NMC/NCM","NCM811","高镍NMC","中镍NMC","NCA","NM","LFP","LMFP","NMA","富镍层状氧化物","富锂富锰层状氧化物(LMR)"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向","微结构工程","共沉淀工艺优化","机器学习辅助设计","反向设计"]},mechanisms:{name:"探索机制",items:["Co供应链与成本","高镍相变","高压相变","H2-H3残余特征","Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化","导电网络","成核与生长","颗粒应力","流体混合"]},evaluation:{name:"评价维度",items:["能量密度","循环寿命","电压极化","电压窗口","全电池评价"]}};
+topics:["能量密度","循环寿命","电压极化","电压窗口","全电池评价"],type:"综述",articleKind:"Perspective（观点文章）"},
+{id:"aem-2018-gradient-nca",year:2018,
+title:"High-Capacity Concentration Gradient Li[Ni0.865Co0.120Al0.015]O2 Cathode for Lithium-Ion Batteries",
+authors:"Kang-Joon Park; Min-Jae Choi; Filippo Maglia; Sung-Jin Kim; Kwang-Ho Kim; Chong S. Yoon; Yang-Kook Sun",
+journal:"Advanced Energy Materials, 8, 1703612",doi:"10.1002/aenm.201703612",
+summary:"本文构建了富镍核、富钴表面的浓度梯度 Li[Ni0.865Co0.120Al0.015]O2（NCA）正极：Ni-rich 核提升容量，Co-rich 表面增强对电解液侵蚀的化学稳定性。相较均匀组分 NCA，梯度材料表现出更好的容量保持与热稳定性；在 60 °C 循环 100 圈后仍保持约 90% 初始容量。其稳定性来自梯度组分与富钴表面对内部应变和反复各向异性体积变化的缓解。",
+materials:["正极材料","NCA","高镍","浓度梯度"],
+modifications:["元素组成调控","表面稳定化","共沉淀"],
+mechanisms:["结构-失效机制","相变与应变","热稳定性"],topics:["循环寿命","热稳定性"],type:"研究型论文"}];
+const taxonomy={types:{name:"文献类型",items:["综述","研究型论文","Perspective（观点文章）"]},materials:{name:"材料体系",items:["正极材料","NMC","NMC/NCM","NCM811","高镍NMC","中镍NMC","NCA","高镍","浓度梯度","NM","LFP","LMFP","NMA","富镍层状氧化物","富锂富锰层状氧化物(LMR)"]},modifications:{name:"改性手段",items:["掺杂","包覆","调节颗粒形貌","一次颗粒取向","微结构工程","共沉淀工艺优化","机器学习辅助设计","反向设计","元素组成调控","表面稳定化","共沉淀"]},mechanisms:{name:"探索机制",items:["Co供应链与成本","高镍相变","高压相变","H2-H3残余特征","Li+ 扩散","晶界应力","微裂纹","界面阻抗","相变与结构演化","导电网络","成核与生长","颗粒应力","流体混合","结构-失效机制","相变与应变","热稳定性"]},evaluation:{name:"评价维度",items:["能量密度","循环寿命","电压极化","电压窗口","全电池评价","热稳定性"]}};
 let filters=new Set();
 const esc=s=>String(s||"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function allTags(p){return [p.type,p.articleKind,...p.materials,...p.modifications,...p.mechanisms,...(p.topics||[])].filter(Boolean)}
