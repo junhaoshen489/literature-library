@@ -106,5 +106,149 @@
       {"heading":"5. 后续启发","body":["可系统改变微波停留时间和终点温度，跟踪初始相分数、δ-phase 活化速度及 Li⁺ 输运的关系。","应进一步量化持续加热时 Li 损失、Mn 价态、颗粒长大和局域组成变化，以区分再有序化的热力学与非化学计量驱动。"]},
       {"heading":"6. 值得思考的问题","body":["为何约 78% 相纯度的初始材料，在充分活化后能逼近约 97% 相纯度材料的性能？","对经历强电化学结构重排的正极，初始结构与最终活化结构分别决定什么，如何用实验将两者拆开？"]}
     ]
+  },
+  {
+    "id": "2026-10-23-diffusion-like-overpotentials",
+    "recommendedOn": "2026-10-23",
+    "title": "Diffusion-like overpotentials from non-diffusion mechanisms in battery particles",
+    "authors": "Nidhi Kapate; Shakul Pathak; Hyukjin Kweon; Jimmy J. Kuo; Hongbo Zhao; Seoyeon Jeong; Martin Z. Bazant; William C. Chueh; Stephen Dongmin Kang",
+    "published": "2026-07-31",
+    "journal": "Nature Energy, 11, 1480–1489",
+    "doi": "10.1038/s41560-026-02118-2",
+    "summary": "以 NCM111 为例表明，电解液渗入团聚颗粒孔道后，即使没有固相扩散，也可形成看似 Warburg 的扩散型极化；GITT/EIS 反演的扩散系数未必代表本征固相扩散。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为 LiₓNi₁/₃Mn₁/₃Co₁/₃O₂（NCM111），围绕液态电解液条件下颗粒级过电位的来源展开。","作者结合 GITT、EIS、孔结构信息与传输线模型，不是单纯的扩散系数测量工作。"]},
+      {"heading":"2. 核心创新","body":["挑战了“平方根时间极化或 Warburg 阻抗必然来自固相扩散”的常见解释。","提出电解液进入团聚颗粒内部孔道后，分布式界面反应和化学电容可形成传输线响应，从而产生无固相扩散也近似扩散的电化学特征。"]},
+      {"heading":"3. 关键结论","body":["改变液态电解液即可显著改变薄电极中 NCM 颗粒的表观扩散极化。","表观 DLi 可能混合了电解液渗透、内部界面反应和分布式阻抗，不能未经机制识别就等同于本征化学扩散系数。"]},
+      {"heading":"4. 为什么值得读","body":["它为单晶/多晶正极的 GITT 与 EIS 对比提供了必要的解释边界：测到的“扩散型”信号并不自动对应同一种物理过程。","这会直接影响对颗粒开裂、孔道和浸润状态的动力学解读。"]},
+      {"heading":"5. 后续启发","body":["可用单晶、完整多晶与开裂多晶 NCM，在相同载量下独立改变浸润程度，再配合三维孔结构成像和传输线建模。","目标应是拆分固相扩散与分布式界面动力学，而不是只比较一个表观 DLi 数值。"]},
+      {"heading":"6. 值得思考的问题","body":["哪些实验组合能在实际复合电极中唯一地区分固相扩散、孔道传输和界面电荷转移？","文献中跨材料、跨电极结构比较的 GITT 扩散系数，有多大比例可真正归因于材料本征差异？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-fast-formation-lithium-rich",
+    "recommendedOn": "2026-10-23",
+    "title": "Fast formation to reinforce lithium-rich cathodes",
+    "authors": "Mengjian Fan; Jiantao Li; Guiyang Gao et al.",
+    "published": "2026-06-17",
+    "journal": "Nature, 655, 116–124",
+    "doi": "10.1038/s41586-025-09553-3",
+    "summary": "对无钴富锂层状正极而言，较快的首次充电会保留部分 Li，并通过“自钉扎效应”抑制深度脱锂后的晶格变形，提升容量与循环稳定性。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为无钴富锂层状正极，重点不是改变材料配方，而是改变首次充电（formation）的倍率。","作者使用多尺度同步辐射技术研究首次充电后的局域结构、过渡金属电子态和三维化学分布。"]},
+      {"heading":"2. 核心创新","body":["与“首次化成越慢越稳定”的直觉相反，文章提出快速首次充电可通过保留局域残余 Li 稳定脆弱的深度脱锂骨架。","作者将该机制称为 self-pinning（自钉扎）效应。"]},
+      {"heading":"3. 关键结论","body":["首次充电倍率从 0.2 C 提升至 2 C 时，论文报告可逆容量约提高 20%，循环寿命延长超过 36%。","残余 Li 被认为能减轻不可逆晶格畸变；但关键变量不仅是平均残余量，还可能包括其空间分布。"]},
+      {"heading":"4. 为什么值得读","body":["它把 formation protocol 视为材料设计变量，说明同一化学组成可因电化学历史不同而走向不同结构演化路径。","这为不依赖常规掺杂或包覆的稳定化策略提供了案例。"]},
+      {"heading":"5. 后续启发","body":["可在不同首次充电倍率后，于相同 SOC 下比较同步辐射 XRD、XANES 与空间分辨化学成像，区分平均残余 Li 与局域分布的作用。","还应评估快速化成在全电池、厚电极和制造节拍下的能量效率及安全性。"]},
+      {"heading":"6. 值得思考的问题","body":["残余 Li 的空间分布是否比平均脱锂程度更决定应力与结构可逆性？","快速化成带来的动力学非均匀性在更厚、更高载量电极中会被放大还是仍可利用？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-drx-hysteresis-stereochemistry",
+    "recommendedOn": "2026-10-23",
+    "title": "Stereochemical origin of potential hysteresis in lithium metal batteries with lithium-rich cation-disordered rocksalt positive electrodes",
+    "authors": "Yu Mei; Fanjie Xia; Hongyi Chen et al.",
+    "published": "2026-10-05",
+    "journal": "Nature Nanotechnology",
+    "doi": "10.1038/s41565-026-02301-2",
+    "summary": "富锂无序岩盐正极的电压滞后可受 d⁰ 阳离子引发的赝 Jahn–Teller 局域畸变、短程有序和氧氧化还原热力学共同控制，而非仅由扩散限制决定。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究使用非水液态电解液的 Li∥DRX 实验电池，重点是氧化物正极自身的局域结构与氧化还原机制。","由于采用锂金属对电极，其结论向石墨全电池推广仍需独立检验。"]},
+      {"heading":"2. 核心创新","body":["将电压滞后与 d⁰ 过渡金属的赝 Jahn–Teller 偏心八面体畸变联系起来。","该局域畸变被认为可同时改变阳离子短程有序、Li⁺ 渗流网络以及 Ni–O 电荷转移与氧氧化还原热力学。"]},
+      {"heading":"3. 关键结论","body":["含 Nb 的 DRX 显示出减轻的电压滞后。作者提出偏心畸变可降低短程有序、改善渗流，并提升晶格氧氧化还原可逆性。","更准确的理解是：这些因素共同调控滞后；不能将滞后简单写成单一扩散问题。"]},
+      {"heading":"4. 为什么值得读","body":["文章把结构畸变、离子输运与电子结构放在同一机制框架，拓展了 DRX 设计中只强调“阳离子无序”的视角。","它也提示电压滞后应区分动力学贡献、热力学贡献与路径依赖。"]},
+      {"heading":"5. 后续启发","body":["可系统比较不同 d⁰ 阳离子引起的局域偏心畸变，并结合 PDF、EXAFS、RIXS 和倍率依赖曲线定量关联结构与滞后。","需要构建能把离子迁移能垒和氧化还原电位贡献拆开的实验或计算对照。"]},
+      {"heading":"6. 值得思考的问题","body":["如何在非平衡充放电路径中可操作地分解动力学与热力学滞后？","改善 Li⁺ 渗流与改变氧氧化还原热力学，是否存在不可避免的设计权衡？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-reversible-oxygen-redox",
+    "recommendedOn": "2026-10-23",
+    "title": "Reversible Oxygen Redox in High Voltage for Lithium-Rich Layered Oxides",
+    "authors": "Zhengbo Liu; Jun Wu; Ziliang Wang et al.",
+    "published": "2026-08-11",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "10.1021/jacs.6c07357",
+    "summary": "对具有 ribbon-ordered 超结构的富锂层状氧化物，氧还原平台可在平均晶体结构变化不明显时消失，揭示电子电荷重分配和 Mn–O 电荷转移对氧氧化还原路径的作用。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["作者通过液态电解液中的自发 Na⁺/Li⁺ 交换制备 Li₀.₆₃[Li₀.₂₀Mn₀.₈₀]O₂，并研究其 ribbon-ordered 局域超结构。","结合原位 XRD、STEM、O K-edge RIXS/软 XAS、Mn K-edge XAS 等手段分析高电压氧氧化还原。"]},
+      {"heading":"2. 核心创新","body":["表明氧还原平台的丧失不必以显著平均晶体结构退化为前提。","将放电下限诱导的氧化还原路径改变与 Mn 氧化还原参与、Mn–O 电荷转移重分配相联系。"]},
+      {"heading":"3. 关键结论","body":["材料在 4.2–4.7 V 循环时显示较小滞后的可逆氧还原平台；放电下限降至 3.0 V 后，高电压氧还原平台消失。","表征显示平均结构变化并不显著，支持电子结构变化也能重塑氧氧化还原路径这一结论。"]},
+      {"heading":"4. 为什么值得读","body":["它明确区分了结构可逆性与电子可逆性：两者相关，却不能相互替代。","对于将氧还原平台消失一概归咎于氧损失、过渡金属迁移或层状坍塌的解读，这是一项重要校正。"]},
+      {"heading":"5. 后续启发","body":["可在同一材料中系统改变放电下限，用 Mn K-edge XAS 与 O K-edge RIXS 同步追踪 Mn/O 电荷补偿的竞争。","还可检验不同局域有序结构是否改变电子重分配对循环路径的敏感性。"]},
+      {"heading":"6. 值得思考的问题","body":["能否在不改变平均结构的前提下，稳定或恢复高电压氧还原平台？","哪些谱学指标最能区分真正的电子路径切换与早期、局域但 XRD 不可见的结构变化？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-metastable-li-mn-o",
+    "recommendedOn": "2026-10-23",
+    "title": "Sustainable high-energy-density Li–Mn–O layered cathode via metastable synthetic kinetics",
+    "authors": "Yuansheng Shi; Fushan Geng; Dilxat Muhtar et al.",
+    "published": "2026-06-11",
+    "journal": "National Science Review, 13, nwag356",
+    "doi": "10.1093/nsr/nwag356",
+    "summary": "室温自发 Na⁺/Li⁺ 离子交换可保留亚稳 O3 Li–Mn–O 的有利局域结构；高温会诱导 Mn 迁移并显著降低长期循环稳定性。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["以 P3-Na₀.₆[Li₀.₂Mn₀.₈]O₂ 为前驱体，经室温自发离子交换得到 O3-Li–Mn–O 正极。","研究在 LiPF₆ 碳酸酯液态电解液中进行，考察合成温度对局域结构和循环性能的影响。"]},
+      {"heading":"2. 核心创新","body":["说明亚稳材料的合成温度并非只决定反应完成度，而会直接重塑离子交换路径、Mn 迁移与后续可逆性。","室温离子交换被用作保留有利亚稳局域结构的合成策略。"]},
+      {"heading":"3. 关键结论","body":["室温样品约为 250 mAh g⁻¹，并在 2.0–4.8 V 下循环 400 圈后保持 88.1% 容量；高温样品为 51.9%。","高温促进 Mn 迁移，阻碍 Li⁺ 可逆层间迁移，并与氧活化不可逆和结构稳定性下降相关。"]},
+      {"heading":"4. 为什么值得读","body":["它将“相同组成、不同合成路径”的性能差异归因到可表征的局域结构演化，而不只停留在经验性温度优化。","适合与 DRX 微波合成的有限稳定窗口研究并读。"]},
+      {"heading":"5. 后续启发","body":["可独立扫描离子交换温度、时间与反应介质，并用原位 XRD、固态 NMR、STEM、EXAFS 追踪局域阳离子迁移。","应把起始容量与长循环稳定性同时作为目标，因为高温样品可能有更高初始容量却更快衰减。"]},
+      {"heading":"6. 值得思考的问题","body":["哪些局域结构特征真正决定室温产物的长期优势？","亚稳态的制造窗口在放大制备、储存和电极加工后能否保持？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-1t-surface-lco",
+    "recommendedOn": "2026-10-23",
+    "title": "Coherent 1T-Phase Surface Architecture Unlocks Ultrafast and Durable High-Voltage LiCoO₂ Cathodes",
+    "authors": "Wei Zheng; Jinshuo Zou; Gemeng Liang et al.",
+    "published": "2026-08-19",
+    "journal": "Angewandte Chemie International Edition, 65, e6545119",
+    "doi": "10.1002/anie.6545119",
+    "summary": "在 LiCoO₂ 表面构筑相干含氟 1T 相，以 Li 位点密度作为界面快速 Li⁺ 迁移的结构描述符，在高电压下兼顾高倍率与循环稳定性。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为高电压 LiCoO₂，作者在其表面构筑相干的 1T-Li₁₊ₓCoO₂₋ᵧFᵧ 架构。","核心表征包括原位同步辐射 XRD 和中子衍射，并讨论高电压相变与倍率行为。"]},
+      {"heading":"2. 核心创新","body":["提出 Li-site density（ρLi-site）作为界面 Li⁺ 迁移的定量结构描述符，强调可结晶学访问的扩散位点数量与结构相干性。","这不是单纯用高离子导电包覆层降低阻抗的路线。"]},
+      {"heading":"3. 关键结论","body":["论文报告 1T 表层理论 Li 位点密度约为 48 sites nm⁻³；10 C 和 20 C 下容量分别为 183 和 175 mAh g⁻¹。","该结构有助于抑制高电压 O3→H1-3 相变，500 圈后容量保持率约为 87%。位点密度高本身不等于扩散系数高，连通性、占位率和迁移能垒同样关键。"]},
+      {"heading":"4. 为什么值得读","body":["文章尝试将经验性表面改性转为可计算、可比较的晶体学描述符设计。","它与“活性表面相缓冲体相浓度梯度”的富锂单晶研究形成有价值的对照。"]},
+      {"heading":"5. 后续启发","body":["可在不同表面晶体结构间同步比较 ρLi-site、迁移能垒和实际电化学动力学，检验其独立预测力。","还需在厚电极与全电池中排除比表面积、电子导通和界面副反应带来的混杂影响。"]},
+      {"heading":"6. 值得思考的问题","body":["高 Li 位点密度需要何种最小连通性，才会转化为宏观倍率优势？","高电压循环中，表面相的成分与相干界面能否长期保持？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-electric-field-solvent-ncm811",
+    "recommendedOn": "2026-10-23",
+    "title": "Electric-Field-Oriented Interfacial Solvent Engineering Enables High-Voltage Ether Electrolytes for Ni-Rich Lithium-Ion Batteries",
+    "authors": "Qianfeng Zheng; Yanxin Jiang; Guoqiang He et al.",
+    "published": "2026-10-06",
+    "journal": "Journal of the American Chemical Society, 148(41), 44470–44483",
+    "doi": "10.1021/jacs.6c12182",
+    "summary": "利用高电场下氰基优先吸附调控醚类溶剂在 NCM811 界面的取向，屏蔽易氧化的醚氧与 α-H，并构建稳定的富无机 CEI。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究聚焦高电压醚类电解液与富镍 NCM811 的界面反应，使用 1.5 Ah 石墨∥NCM811 软包电池验证。","作者引入非对称溶剂 4-cyano-tetrahydropyran（THP-CN），并通过多种原位与后分析手段研究取向和分解。"]},
+      {"heading":"2. 核心创新","body":["把高电压电解液设计从分子本征 HOMO 与溶剂化结构，推进到电极双电层中分子的电场取向。","极性氰基优先吸附使界面形成“cathode–cyano–ether–bulk”构型，减少醚氧和邻近 α-H 与正极的直接反应。"]},
+      {"heading":"3. 关键结论","body":["THP-CN 醚电解液报告约 4.8 V 的氧化稳定性，并通过 FSI⁻/NO₃⁻ 分解形成富无机 CEI。","1.5 Ah 软包在 2.8–4.5 V 下实现 331.2 Wh kg⁻¹，600 圈后容量保持 83.5%。4.8 V 氧化稳定性与软包实际 4.5 V 上限是不同测试条件，不应混为一谈。"]},
+      {"heading":"4. 为什么值得读","body":["它将界面电场、分子姿态和反应选择性建立成明确设计链条，为高电压电解液提供不同于单纯“更耐氧化溶剂”的思路。","同时把机理研究推进到有实际尺寸的石墨全电池。"]},
+      {"heading":"5. 后续启发","body":["可比较不同 SOC、不同高镍表面化学下的电场与溶剂吸附构型，验证策略的可迁移性。","还需拆分 THP-CN 取向效应、阴离子分解和 CEI 成分三者对寿命的相对贡献。"]},
+      {"heading":"6. 值得思考的问题","body":["在真实多晶、多晶面且不断重构的 NCM 表面，分子取向能否保持足够稳定？","这一策略对电解液黏度、低温性能、成本及长期气体管理的影响如何？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-strategic-nickel-rich-synthesis",
+    "recommendedOn": "2026-10-23",
+    "title": "Strategic Synthetic Pathway for Tailoring the Crystallographic and Microstructural Evolution of Cathode Materials for Li-Ion Batteries",
+    "authors": "Min-Gyu Seo; Sang-Mun Han; Hyoung-Jun Jo; Geon-Tae Park; Gwang-Ho Kim; Nam-Yung Park; Yang-Kook Sun",
+    "published": "2026-04-06",
+    "journal": "ACS Energy Letters, 11(5), 4084–4093",
+    "doi": "10.1021/acsenergylett.6c00663",
+    "summary": "两步煅烧将补锂与后续晶体/微结构演化解耦，借助 Nb 调控形成径向一次颗粒和层状基体中的岩盐纳米畴，以适配高功率飞行工况。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为面向城市空中交通（UAM）的富镍正极。作者设计中温补锂、冷却、再高温煅烧的两步路线，并引入 Nb 调控结构演化。","论文讨论补锂、相变、一次颗粒形貌与倍率稳定性之间的合成路径关系。"]},
+      {"heading":"2. 核心创新","body":["不把烧结视为单一温度/时间问题，而是功能性地分离补锂动力学与晶体和微结构演化。","通过有意保留中间相，形成岩盐纳米畴嵌在层状基体的多相结构。"]},
+      {"heading":"3. 关键结论","body":["优化材料具有细小径向排列的一次颗粒和层状/岩盐纳米畴；作者将岩盐纳米畴在充电时可逆的类尖晶石转变与三维 Li⁺ 扩散路径相联系。","材料在严苛 UAM 飞行工况下表现出长期功率稳定性。Nb 的作用与两步热处理路线耦合，不能简化为“掺 Nb 就有效”。"]},
+      {"heading":"4. 为什么值得读","body":["它将合成路径本身提升为材料设计变量，并明确指出补锂与微结构优化的热需求可能冲突。","对高镍正极从实验室烧结走向工艺设计尤其有参考价值。"]},
+      {"heading":"5. 后续启发","body":["可分别测量 LiOH 熔化与重分布、固相补锂、晶粒生长和相演化的时间尺度，再用原位高温 XRD、DSC/TGA 与截面 SEM 建立过程图。","建模应先拆分热传导、液态锂源再分布和接触面积演化，避免假设所有颗粒均匀反应。"]},
+      {"heading":"6. 值得思考的问题","body":["两步工艺的多相纳米结构在批量生产时是否可重复、可控？","岩盐纳米畴带来的运输收益如何与首圈损失、界面反应和长期相稳定性共同评估？"]}
+    ]
   }
 ]
