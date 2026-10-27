@@ -1,0 +1,25 @@
+name: Validate daily paper archive
+
+on:
+  push:
+    paths:
+      - "data/daily-papers.json"
+      - "scripts/validate-daily-papers.mjs"
+  pull_request:
+    paths:
+      - "data/daily-papers.json"
+      - "scripts/validate-daily-papers.mjs"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/validate-daily-papers.mjs

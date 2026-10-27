@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>每日论文阅读｜个人科研文献库</title>
+<link rel="stylesheet" href="daily-reading.css">
+</head>
+<body>
+<main class="wrap">
+  <header class="hero">
+    <div><a class="back" href="index.html">← 返回文献库</a><p class="eyebrow">DAILY PAPER READING</p><h1>每日论文阅读</h1><p class="intro">每日归档一篇锂离子电池氧化物正极论文。目录只保留书目信息和摘要；进入详情页查看完整阅读笔记。</p></div>
+    <div class="notice">已归档 <strong id="paper-count">0</strong> 篇<br>按推荐日期倒序</div>
+  </header>
+  <section class="toolbar" aria-label="论文筛选"><label>检索 <input id="search" type="search" placeholder="题名、作者、期刊或关键词"></label><label>年份 <select id="year"><option value="">全部年份</option></select></label></section>
+  <p class="result" id="result"></p>
+  <section id="papers" class="papers" aria-live="polite"></section>
+  <footer>公开目录仅收录书目信息和阅读笔记；PDF 全文仍保存在私有仓库。</footer>
+</main>
+<script src="daily-reading.js"></script>
+</body>
+</html>

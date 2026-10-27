@@ -1,0 +1,110 @@
+[
+  {
+    "id": "2026-10-21-air-instability-ncm811",
+    "recommendedOn": "2026-10-21",
+    "title": "Air Instability-Induced Mechanical Degradation Plaguing Cyclability of Polycrystalline Nickel-Rich Layered Cathode",
+    "authors": "Enhua Dong; Jinhui Li; Yanting Gao; Yuanjie Zhang; Manling Sui; Pengfei Yan",
+    "published": "2026-06-15",
+    "journal": "Journal of the American Chemical Society, 148(25), 25641–25650",
+    "doi": "10.1021/jacs.6c02705",
+    "summary": "空气储存产生的 Li₂CO₃ 不仅覆盖多晶 NCM811 表面，也会进入晶界。它会暂时提高初始机械强度，却在循环中促进晶间裂纹和容量衰减。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为 LiNi₀.₈Co₀.₁Mn₀.₁O₂（多晶 NCM811），比较空气暴露后单晶与多晶颗粒的结构、力学和循环行为。","研究以实验为主，结合界面化学表征、原位纳米压痕和循环后显微结构分析。"]},
+      {"heading":"2. 核心创新","body":["将空气退化从“外表面残余锂”推进到“内部晶界化学”的尺度：Li₂CO₃ 可进入多晶二次颗粒内部的晶界。","发现晶界 Li₂CO₃ 的短时黏结效应与长期循环失效可以同时存在，不能把初始强度直接等同于抗电化学疲劳能力。"]},
+      {"heading":"3. 关键结论","body":["空气暴露后，单晶和多晶 NCM811 都有表面退化；多晶材料还出现晶间 Li₂CO₃。","原位纳米压痕显示含晶界 Li₂CO₃ 的颗粒初始机械强度更高；但循环中副反应和晶间裂纹更严重，导致容量衰减。","因此，改善高镍多晶正极的空气稳定性需要稳定晶界，而不只是处理外表面。"]},
+      {"heading":"4. 为什么值得读","body":["它把储存历史列为材料性能的关键变量，提醒我们相同组成、形貌和初始 XRD 不代表相同的循环起点。","文章也清楚地区分了初始机械强度、断裂韧性和电化学疲劳抗性，这对解读力学表征很重要。"]},
+      {"heading":"5. 后续启发","body":["可独立控制湿度、CO₂ 分压与暴露时间，结合 STEM-EELS/ToF-SIMS、原位纳米压痕和 FIB-SEM 或 nano-CT，建立晶界碳酸盐含量—裂纹演化—容量衰减的定量关系。","需要把空气暴露纳入样品制备与论文报告的可追溯参数。"]},
+      {"heading":"6. 值得思考的问题","body":["为何能提高初始抗压响应的晶界相，会降低反复化学应变下的可靠性？","晶界 Li₂CO₃ 的作用究竟主要来自力学失配、Li⁺ 输运改变，还是与电解液副反应的耦合？"]}
+    ]
+  },
+  {
+    "id": "2026-10-22-neutron-reconstructed-ncm92",
+    "recommendedOn": "2026-10-22",
+    "title": "A High-Nickel Cathode Material for Lithium-Ion Batteries Integrating a Proposed 3D Ionic Percolation Network and Interwoven Layered/Rock-Salt Nanodomains",
+    "authors": "Jun Wang; Yan Zhao; Jinxiang Fan et al.",
+    "published": "2026-10-16",
+    "journal": "Journal of the American Chemical Society",
+    "doi": "10.1021/jacs.6c14375",
+    "summary": "高能中子辐照在单晶 NCM92 内构建晶界和层状/岩盐纳米畴；作者提出这些内部晶界可能形成三维 Li⁺ 渗流网络，同时提升倍率和循环稳定性。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究材料为单晶 LiNi₀.₉₂Co₀.₀₆Mn₀.₀₂O₂（NCM92）。作者以高能中子辐照重构其内部局域结构，并进行电化学、结构和谱学表征。","论文于 2026 年 10 月 16 日在线发表；公开摘要未给出完整电解液配方。"]},
+      {"heading":"2. 核心创新","body":["不再把单晶内部无晶界视为唯一目标，而是主动引入 Li/Ni 反位、局域八面体畸变、内部晶界及层状/岩盐交织纳米畴。","作者提出内部晶界可构成三维 Li⁺ 渗流网络，纳米畴则有助于抑制不可逆相变与界面副反应扩展。"]},
+      {"heading":"3. 关键结论","body":["辐照后的材料在 0.2 C 下给出 213.9 mAh g⁻¹、在 10 C 下给出 152.2 mAh g⁻¹；5 C 循环 450 圈后保持 80.0% 容量，对照单晶为 64.2%。","这些结果支持“受控无序可改善性能”的设计方向，但三维渗流网络仍是作者提出并由多项证据支持的机制，尚非直接成像的唯一结论。"]},
+      {"heading":"4. 为什么值得读","body":["它挑战了“晶界和岩盐相必然有害”的简单判断，把缺陷的原子结构、连通性和电化学功能放在一起讨论。","同时提醒读者：结构缺陷的效果取决于其空间尺度、组成和网络连通性，而不是名称本身。"]},
+      {"heading":"5. 后续启发","body":["可以用同一组成、不同辐照剂量或其他可控缺陷方法，配合空间分辨扩散测量和三维断层表征，检验晶界是否真的承担快速输运。","若面向应用，还需比较辐照工艺的能耗、产能、成本和安全性；优异结构不自动等于可制造路线。"]},
+      {"heading":"6. 值得思考的问题","body":["内部晶界的 Li⁺ 迁移率是否高于体相，且是否形成贯通网络？","中子辐照的材料价值是可规模化制造，还是揭示可由更廉价工艺复制的结构设计原则？"]}
+    ]
+  },
+  {
+    "id": "2026-10-23-oxygen-redox-reversibility",
+    "recommendedOn": "2026-10-23",
+    "title": "Enhancing the longevity of lithium-manganese-rich layered oxides by promoting oxygen redox reversibility",
+    "authors": "Munsoo Song; Danwon Lee; Bonho Koo et al.",
+    "published": "2026-08-04",
+    "journal": "Nature Communications, 17, 9372",
+    "doi": "10.1038/s41467-026-76366-x",
+    "summary": "富锂层状氧化物的氧氧化还原可逆性不仅受充电上限影响，也取决于是否深度放电；将下限从 3.0 V 延至 2.0 V 可促进氧还原并改善寿命。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究材料为低钴富锂层状氧化物 Li₁.₁₄Ni₀.₃₁₂Mn₀.₅₄₄Co₀.₀₀₄O₂。作者使用液态电解液体系，并验证了石墨∥LMR 软包全电池。","对话记录中的电解液为 1.2 M LiPF₆（EC/EMC/DEC = 20/70/10）并含 VC 和 1,3-丙烷磺内酯添加剂。"]},
+      {"heading":"2. 核心创新","body":["将研究重点从“抑制充电时氧氧化”扩展为“让放电时氧化态氧充分还原”。","以 4330 与 4320 两个只改变放电下限的方案构成关键对照，直接检验深度放电对氧氧化还原可逆性的作用。"]},
+      {"heading":"3. 关键结论","body":["STXM/NMF 分析显示，4320 方案的氧化态氧恢复比例约为 97.1%，高于 4620 的约 86.1%；在 3.0–2.0 V 区间氧还原仍在继续。","放电不充分的方案出现更多气体释放、纳米空洞和结构退化。40 Ah 级电池在优化化成和 4.25–2.00 V 长循环方案下，883 圈后能量保持率为 92.2%。","663 Wh kg⁻¹ 是按正极活性材料质量归一化的比能量，不能误读为整电芯质量能量密度。"]},
+      {"heading":"4. 为什么值得读","body":["文章把电压窗口、氧电子态、气体析出和结构失效串成一条可检验的证据链，并把机理推进到 40 Ah 级全电池。","它说明富锂材料不能直接套用常规 NCM 的深度放电经验。"]},
+      {"heading":"5. 后续启发","body":["可通过改变放电下限、倍率和恒压保持时间，区分氧还原的热力学限制与动力学限制。","结合 O K-edge XAS/RIXS、OEMS、operando XRD 与弛豫测试，能够更严格地拆分电子态恢复、结构重排和界面反应。"]},
+      {"heading":"6. 值得思考的问题","body":["能否通过延长放电时间而非降低截止电压，实现相似的氧电子态恢复？","深度放电带来的负极、电解液和整电池能量效率代价，如何与正极结构收益共同优化？"]}
+    ]
+  },
+  {
+    "id": "2026-10-24-diversified-surface-phase-lmr",
+    "recommendedOn": "2026-10-24",
+    "title": "High-rate single-crystalline Li-rich layered oxide with diversified surface-phase cation ordering for Li-ion batteries",
+    "authors": "Jingxi Zhang; Shile Chen; Yuting Xia; Yanhao Dong; Ju Li; Chang-An Wang et al.",
+    "published": "2026-07-01",
+    "journal": "Nature Communications, 17, 8207",
+    "doi": "10.1038/s41467-026-75101-w",
+    "summary": "在单晶富锂正极表面构筑层状、尖晶石、岩盐和阳离子混排的相干活性区域，可缓冲表面 Li⁺ 积累，使体相更深度嵌锂并提升高倍率性能。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为单晶 Li₁.₂Mn₀.₄₈Ni₀.₁₆Co₀.₁₆O₂。材料经硫酸铵辅助表面脱锂和低温热处理，形成多种阳离子有序表面相。","实验含锂半电池与石墨全电池；对话记录中的电解液为 1 M LiPF₆（EC/DMC/DEC = 1/1/1）加 1 wt% LiPO₂F₂。"]},
+      {"heading":"2. 核心创新","body":["作者提出单晶富锂材料的倍率瓶颈可位于反应边界：表面 Li⁺ 积累会提前触发截止电压，导致体相容量未被访问。","相干共存的层状、尖晶石、岩盐和阳离子混排表面区域兼具离子输运、电化学活性和稳定化功能，而非传统惰性包覆。"]},
+      {"heading":"3. 关键结论","body":["H-SCLMR 在 5 C/5 C 下为 179 mAh g⁻¹，高于未处理单晶的 141 mAh g⁻¹；5 C 快充后以 0.2 C 放电为 248 mAh g⁻¹。","0.5 C 循环 150 圈后容量保持率为 94.5%。有限元模型表明，仅数纳米厚的活性表面层可通过缓冲浓度梯度，提高整体可利用容量。","GITT 所得为表观扩散系数；它支持动力学改善，但不能单独证明本征固相扩散系数提高。"]},
+      {"heading":"4. 为什么值得读","body":["文章将“扩散长度”转化为“表面反应边界—浓度分布—体相容量利用率”的问题，为单晶正极倍率设计提供不同框架。","尤其适合与单晶/多晶比较、表面重构和电化学机械耦合研究对读。"]},
+      {"heading":"5. 后续启发","body":["可制作迁移率相近、但是否具有低电压可逆氧化还原活性不同的表面相，区分快速输运与电化学缓冲的贡献。","应在实际载量、厚电极和全电池条件下检验这一表面设计的能量密度与寿命收益。"]},
+      {"heading":"6. 值得思考的问题","body":["小体积分数表面相为何能改变整个颗粒的容量利用率？","真实非球形单晶中，局域相分布和颗粒各向异性会如何改变理想化有限元模型的结论？"]}
+    ]
+  },
+  {
+    "id": "2026-10-25-descriptor-informed-doping",
+    "recommendedOn": "2026-10-25",
+    "title": "Descriptor-informed multi-component doping enables high-performance Co-free Ni-rich cathodes",
+    "authors": "Siqi Guan; Tong Yu; Pei Tang; Huize Wu et al.",
+    "published": "2026-10-01",
+    "journal": "Nature Synthesis",
+    "doi": "10.1038/s44160-026-01152-y",
+    "summary": "作者以掺杂离子电荷密度与金属—氧键强度为物理描述符，尝试分别优化 Li⁺ 迁移和氧晶格稳定性，实现无钴高镍正极的高倍率与低温性能。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究对象为无钴高镍层状氧化物。论文发表于 2026 年 10 月 1 日，包含材料合成、结构表征和电化学验证。","公开摘要未提供完整液态电解液配方，因此不在此推断其具体组成。"]},
+      {"heading":"2. 核心创新","body":["将低电荷密度掺杂离子用于调节 Li⁺ 迁移的局域静电环境，将强金属—氧键掺杂用于稳定氧亚晶格，主张用不同元素分担不同物理功能。","重点不在某一掺杂配方，而在“物理描述符 → 元素筛选 → 局域结构 → 性能”的可检验设计链条。"]},
+      {"heading":"3. 关键结论","body":["报道的多组分无钴高镍正极在 25 °C、25 C 下为 130.9 mAh g⁻¹；25 °C、10 C 循环 350 圈后保持 82.4%；−20 °C、1 C 下为 112.2 mAh g⁻¹。","作者将性能改善联系到表观 Li⁺ 动力学、相变抑制和化学机械疲劳缓解。倍率结果本身不能独立证明本征扩散系数上升。"]},
+      {"heading":"4. 为什么值得读","body":["文章代表从经验性掺杂走向可量化设计规则的努力，适合思考哪些材料描述符真正具有可迁移的预测能力。","同时也提供了因果推断的反例：多元素掺杂还会改变形貌、混排和微结构，相关性不等于唯一机制。"]},
+      {"heading":"5. 后续启发","body":["可设计未掺杂、仅低电荷密度、仅强 M–O 键和协同掺杂四组对照，并用 operando XRD、XAS/EXAFS、GITT/EIS 与原子分辨 STEM 分别测量结构与动力学。","核心是为 Li⁺ 迁移能垒和氧晶格稳定性建立相互独立的实验指标。"]},
+      {"heading":"6. 值得思考的问题","body":["两种描述符在真实局域结构中能否被独立调控与验证？","Li⁺ 迁移能垒如何随锂含量、应变和局域有序度动态变化，而非被当作固定材料常数？"]}
+    ]
+  },
+  {
+    "id": "2026-10-26-microwave-drx-pyrometry",
+    "recommendedOn": "2026-10-26",
+    "title": "Monitoring the Microwave Synthesis of d⁰-Free Disordered Rocksalt Cathodes Using In Situ Infrared Pyrometry",
+    "authors": "Erick A. Lawrence; Matthew A. Wright; Tianyu Li; Euan N. Bassey; Vijay Kumar; Shiyu Yuan; Yangying Zhu; Pierre-Etienne Cabelguen; Raphaële J. Clément",
+    "published": "2026-08-05",
+    "journal": "Angewandte Chemie International Edition, 65(40), e1884534",
+    "doi": "10.1002/anie.1884534",
+    "summary": "原位红外测温揭示 d⁰-free DRX 正极在微波合成中经历“有序—无序—再有序”相变；最佳 DRX 相纯度窗口有限，但残余层状相对长期性能影响不大。",
+    "sections": [
+      {"heading":"1. 论文基本信息","body":["研究材料为 Li₁.₁Mn₀.₉O₁.₉F₀.₁（LM9），属于富锂无序岩盐（DRX）正极。","研究结合微波合成、原位红外热成像、同步辐射 XRD、固态 NMR 和锂半电池测试；完整电解液配方未在已核实文本中确认。"]},
+      {"heading":"2. 核心创新","body":["通过原位温度曲线和独立物相表征建立对应关系，发现 LM9 不是单向高温无序化，而是经历再入的“有序—无序—有序”转变。","红外曲线中约 945 °C 的特征与 DRX 无序化完成相对应，使微波反应可在最佳窗口被精准终止。"]},
+      {"heading":"3. 关键结论","body":["3.0–4.0 min 微波处理时 DRX 相约为 96.3%–97.9%；继续加热会重新出现有序 Li–Mn–O 相，LM9-7.5 的 DRX 相约为 78%。","高相纯度样品初始容量更高，但经循环活化后，含更多层状相样品的容量可接近；两组最佳电池在 100 圈时约为 202–203 mAh g⁻¹。","这种结论适用于该 LM9 体系，不应泛化为“DRX 杂相通常无害”。"]},
+      {"heading":"4. 为什么值得读","body":["它将非平衡合成的温度历史、瞬态相组成和后续电化学结构演化放到同一框架中。","也展示了原位测温本身不能证明相变；关键在于与 XRD、NMR 等结构证据的交叉验证。"]},
+      {"heading":"5. 后续启发","body":["可系统改变微波停留时间和终点温度，跟踪初始相分数、δ-phase 活化速度及 Li⁺ 输运的关系。","应进一步量化持续加热时 Li 损失、Mn 价态、颗粒长大和局域组成变化，以区分再有序化的热力学与非化学计量驱动。"]},
+      {"heading":"6. 值得思考的问题","body":["为何约 78% 相纯度的初始材料，在充分活化后能逼近约 97% 相纯度材料的性能？","对经历强电化学结构重排的正极，初始结构与最终活化结构分别决定什么，如何用实验将两者拆开？"]}
+    ]
+  }
+]
