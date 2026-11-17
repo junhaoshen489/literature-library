@@ -920,5 +920,41 @@
         ]
       }
     ]
+  },
+  {
+    "id": "2026-11-08-crack-propagation-lco",
+    "recommendedOn": "2026-11-08",
+    "title": "Origin of crack propagation in lithium cobalt oxide positive electrode for lithium-ion batteries",
+    "authors": "Wenguang Zhao; Zijian Li; Mingyang Li; Hengyu Ren; Cong Lin; Haocong Yi; Shengyu Wu; Xiaohu Wang; Jun Wang; Bin Fei; Muyu Zhang; Mingwei Wang; Ye Sun; Guojie Chen; Zhefeng Chen; Weixin Chen; Xiaoxu Zhao; Shunning Li; Dong Zhou; Qinghe Zhao; Feng Pan",
+    "published": "2026-07-10",
+    "journal": "Nature Communications, 17, 8525",
+    "doi": "10.1038/s41467-026-75373-2",
+    "summary": "在 60 °C、4.6 V 浮充条件下，LiCoO₂ 的 O3→O1→阳离子混排相变引发晶格失配应力；氧阴离子活性驱动氧向裂纹迁移并聚集为 O₂，促进内部裂纹扩展。",
+    "sections": [
+      {"heading": "1. 论文基本信息", "body": ["研究对象为高电压 LiCoO₂ 正极。作者在 60 °C、4.6 V（vs. Li⁺/Li）浮充下研究深度脱锂中的相变、氧阴离子反应和内部裂纹。", "工作综合显微成像、衍射、气体分析和多种谱学表征；锂半电池电解液为 1.0 M LiPF₆（EC/EMC/FEC = 1/1/1）。"]},
+      {"heading": "2. 核心创新", "body": ["将连续相变引发的裂纹起始，与氧阴离子向裂纹迁移、聚集及释氧连成同一失效机制。", "裂纹不仅是机械后果，也可能成为局域氧化学发生和加速的通道。"]},
+      {"heading": "3. 关键结论", "body": ["深度脱锂时的 O3→O1→阳离子混排相变造成晶格失配，产生触发内部裂纹的应力。", "氧化态晶格氧向裂纹迁移并形成 O₂；裂纹与氧反应相互促进，耦合决定高电压 LCO 的结构失效。"]},
+      {"heading": "4. 为什么值得读", "body": ["它将 LCO 的相变、氧电子态和裂纹纳入同一证据链，对理解高电压层状氧化物具有基础意义。", "平均 XRD 相和容量保持率未必能捕捉裂纹处的局域氧化学。"]},
+      {"heading": "5. 后续启发", "body": ["可在不同截止电压、温度和恒压时间下，结合原位气体分析与空间分辨 O K-edge 谱学，检验氧从晶格到裂纹再到表面的时间顺序。", "稳定化方案应同时评估相变失配、氧迁移和裂纹连通性。"]},
+      {"heading": "6. 值得思考的问题", "body": ["裂纹究竟是氧迁移的驱动因素、快速扩散通道，还是两者相互增强的结果？", "实际厚电极的局部 SOC 不均匀性会如何改变相变、氧迁移和裂纹的空间耦合？"]}
+    ]
+  },
+  {
+    "id": "2026-11-17-rivet-cations-nmc811",
+    "recommendedOn": "2026-11-17",
+    "title": "“Rivet” cations enhance mechanical stability of Ni-rich layered cathode materials for Li-ion batteries",
+    "authors": "Yuliya A. Klychevskikh; Ivan A. Moiseev; Eugene S. Statnik; Arseniy S. Burov; Dmitry A. Aksyonov; Alexander M. Korsunsky; Artem M. Abakumov",
+    "published": "2026-11-11",
+    "journal": "Communications Materials (early article)",
+    "doi": "10.1038/s43246-026-01425-1",
+    "summary": "单晶 NMC811 中占据 Li 层位点的 Mg²⁺ 与 Ni²⁺ 可像铆钉一样限制层滑移。原位微柱压缩、纳米压痕和柱体劈裂显示，相关位点占有率增加时剪切阻力、硬度、断裂韧性和杨氏模量均提高。",
+    "sections": [
+      {"heading": "1. 论文基本信息", "body": ["研究对象为 Mg 掺杂的单晶高镍 NMC811 层状氧化物，重点考察 Li 层 A 位点中 Mg²⁺ 和 Ni²⁺ 对颗粒力学性质的影响。", "论文于 2026 年 11 月 11 日在 Communications Materials 在线发表。作者使用扫描电镜内原位微柱压缩、纳米压痕、柱体劈裂以及密度泛函理论计算。"]},
+      {"heading": "2. 核心创新", "body": ["将通常被笼统归入阳离子混排的 Li 位 Mg/Ni 占位，作为可量化的力学设计变量，直接测量其对基面滑移临界分切应力和抗裂性能的影响。", "这为“铆钉效应”提供了颗粒尺度的力学证据，而不仅依赖循环性能和相变现象反推。"]},
+      {"heading": "3. 关键结论", "body": ["随着 Li 层 A 位点中 Mg 与 Ni 的累计占有率增加，作者观察到基面滑移临界分切应力、硬度、断裂韧性 K₁c 和杨氏模量均提高。", "计算表明 Mg/Ni 取代 Li 对机械强化具有协同作用。作者据此认为这些阳离子可抑制密排层滑移及相关破坏性相变，从而减少颗粒内开裂。"]},
+      {"heading": "4. 为什么值得读", "body": ["文章把掺杂位点、具体滑移系和断裂指标接在一起，使高镍正极的抗裂设计从经验性元素筛选走向可检验的力学机制。", "它也提醒读者：提高硬度或韧性与提高电池综合性能不是同一个命题，仍需同时评估 Li⁺ 迁移和可用容量。"]},
+      {"heading": "5. 后续启发", "body": ["可在相同粒径、形貌和 Ni 含量下独立调节 Mg_A 与 Ni_A 占位，检验二者是否真的协同，而不只是随总掺杂量共同变化。", "应将原位力学测试与倍率、GITT、长期循环和裂纹三维成像配对，寻找抗滑移收益与 Li⁺ 输运损失之间的最优窗口。"]},
+      {"heading": "6. 值得思考的问题", "body": ["若 Li 层位点被更多 Mg/Ni 占据，机械强化会在何种占有率下开始明显妨碍 Li⁺ 迁移？", "微柱和柱体劈裂所得力学指标，能在多晶复合电极及实际全电池循环条件下预测寿命吗？"]}
+    ]
   }
 ]
