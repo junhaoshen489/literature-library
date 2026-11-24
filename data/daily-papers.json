@@ -1144,5 +1144,67 @@
         ]
       }
     ]
+  },
+  {
+    "id": "2026-11-24-o6-layered-oxide-oxygen-redox",
+    "recommendedOn": "2026-11-24",
+    "title": "O6-type layered oxides for sustainable high-energy battery cathodes",
+    "authors": "Seongmin Kang, Sung-O Park, Ho-Young Jang, Youngsin Kim, Hyuk-Joon Kim, Hongjin Ahn, Seungju Yu, Bhargavi Pant, Po-Hua Su, Jonghun Park, Kun-Hee Ko, Youngjun Jeon, Seonwoo Jung, Stefan A. Freunberger, Kisuk Kang",
+    "published": "2026-11-20",
+    "journal": "Nature Sustainability (2026)",
+    "doi": "10.1038/s41893-026-01987-5",
+    "summary": "作者构筑由 O3 与 O1 子单元原子尺度交错形成的 O6 型富锂层状氧化物。该堆垛结构抑制过渡金属迁移和不可逆氧二聚化，在稳定阴离子氧化还原的同时显著减弱电压衰减。",
+    "sections": [
+      {
+        "heading": "论文基本信息",
+        "body": [
+          "题目：O6-type layered oxides for sustainable high-energy battery cathodes。",
+          "作者：Seongmin Kang、Sung-O Park、Ho-Young Jang、Youngsin Kim 等，通讯作者 Kisuk Kang。",
+          "期刊：Nature Sustainability；发表日期：2026 年 11 月 20 日；DOI：10.1038/s41893-026-01987-5。",
+          "研究对象为富锂层状正极 Liₓ(Li₀.₁₅Ni₀.₂₀Mn₀.₆₅)O₂；其 O6 堆垛由 O3 与 O1 型子单元在原子尺度交错形成。"
+        ]
+      },
+      {
+        "heading": "核心创新",
+        "body": [
+          "作者将阴离子氧化还原稳定性的设计焦点从成分与掺杂，推进到氧层堆垛序列这一原子尺度结构变量。",
+          "O6 结构并非单一传统层状相，而是 O3/O1 子单元的有序交错；这种局域构型改变了过渡金属迁移和氧—氧二聚化的能量学。",
+          "第一性原理计算、原位 XRD、拉曼、STXM/XANES、DEMS 与原子分辨显微表征共同建立了结构—氧化还原—电压保持之间的证据链。"
+        ]
+      },
+      {
+        "heading": "关键结论",
+        "body": [
+          "O6 架构提高了过渡金属迁移与不可逆氧二聚化的能垒，因而抑制氧氧化还原相关的破坏性结构演化。",
+          "充放电中可出现短暂的类尖晶石特征，但在 O6 材料中放电后大多消失，说明结构响应更可逆；O3 对照中相应特征更易残留。",
+          "论文报告 O6 正极具有很小的电压衰减和更优的能量密度保持，表明稳定氧氧化还原不一定要牺牲富锂正极的高容量潜力。"
+        ]
+      },
+      {
+        "heading": "为什么值得读",
+        "body": [
+          "富锂层状氧化物长期受制于氧氧化还原伴生的电压衰减；这项工作给出了不同于常规掺杂和表面改性的结构设计路径。",
+          "它特别有价值之处在于没有把“抑制相变”作为笼统结论，而是具体区分了过渡金属迁移、氧二聚化及其循环可逆性。",
+          "对于研究氧层滑移、层状多型、阴离子氧化还原与高能量密度正极关系的读者，这是一篇机制与材料设计兼具的原始研究。"
+        ]
+      },
+      {
+        "heading": "后续启发",
+        "body": [
+          "可把堆垛工程与组成调控、颗粒形貌和界面保护协同设计，探索是否能在较低 Co 或无 Co 条件下推广 O6 型局域结构。",
+          "材料筛选不应只比较平均晶体结构；局域堆垛异质性、氧配位环境及其循环可逆性应成为关键描述符。",
+          "若能厘清离子交换和烧结过程中的 O6 形成机制，可能发展为可控合成而非偶然获得的结构平台。"
+        ]
+      },
+      {
+        "heading": "值得思考的问题",
+        "body": [
+          "O6 堆垛的形成窗口、相比例与颗粒尺度如何共同决定电压保持和倍率性能？",
+          "在高面载量、低电解液用量及全电池环境中，O6 结构能否维持同样的氧化还原可逆性？",
+          "O6 架构的稳定作用与表面 CEI 演化、气体副反应之间是否存在耦合或新的限制？",
+          "该堆垛设计能否迁移到其他富锂或富锰层状氧化物体系，并用可规模化的工艺稳定复现？"
+        ]
+      }
+    ]
   }
 ]
