@@ -1206,5 +1206,63 @@
         ]
       }
     ]
+  },
+  {
+    "id": "2026-11-26-complex-doping-linio2",
+    "recommendedOn": "2026-11-26",
+    "title": "Making 1000 Wh/kg LiNiO2 Cathode Nearly Strain-Free by Complex-Concentrated Doping",
+    "authors": "Yaqi Jing, Zhen Wang, Rui Zhang, Lei Wang, Zhennan Chen, Lu Ma, Dali Yang, Mingyuan Ge, Iradwikanari Waluyo, Adrian Hunt, Hui Zhong, Stephen E. Trask, Mingyuan Xue, Huolin L. Xin",
+    "published": "2026-10-25",
+    "journal": "ACS Energy Letters, 11(11), 7173–7181",
+    "doi": "10.1021/acsenergylett.6c01681",
+    "summary": "作者采用 5% 无钴多元素掺杂稳定 LiNiO₂，降低充放电过程中的晶格应变及相变，同时保持高比容量，并在软包全电池中验证循环性能。",
+    "sections": [
+      {
+        "heading": "论文基本信息",
+        "body": [
+          "题目：Making 1000 Wh/kg LiNiO₂ Cathode Nearly Strain-Free by Complex-Concentrated Doping。",
+          "作者：Yaqi Jing、Zhen Wang、Rui Zhang 等；通讯作者 Huolin L. Xin。",
+          "期刊：ACS Energy Letters，2026，11(11)，7173–7181；在线发表：2026 年 10 月 25 日；DOI：10.1021/acsenergylett.6c01681。",
+          "研究对象为无钴多元素掺杂 LiNiO₂ 锂离子电池正极，结合材料表征和软包电池测试。"
+        ]
+      },
+      {
+        "heading": "核心创新",
+        "body": [
+          "用总量为 5% 的无钴多元素掺杂，缓解高镍极限材料 LiNiO₂ 的化学—机械退化。",
+          "利用原位和非原位衍射、吸收谱与显微表征，关联掺杂、晶格演变和电化学稳定性。"
+        ]
+      },
+      {
+        "heading": "关键结论",
+        "body": [
+          "作者报告 c 轴应变由 7.4% 降至 2.1%，并抑制高电压相变相关的结构退化；近零应变不意味着各晶轴完全没有变化。",
+          "改性材料达到 258 mAh/g 与 973 Wh/kg；软包电池循环 1800 次后保持 80% 容量。上述数值取决于论文具体测试条件，材料比能量不等同于整电池比能量。",
+          "作者还观察到改善的热稳定性。"
+        ]
+      },
+      {
+        "heading": "为什么值得读",
+        "body": [
+          "LiNiO₂ 具有很高的容量潜力，但高脱锂状态的结构收缩与氧损失限制循环寿命；这项研究展示了控制应变的材料设计策略。",
+          "它同时提供结构证据和软包电池结果，便于思考机理发现与实际电池表现之间的联系。"
+        ]
+      },
+      {
+        "heading": "后续启发",
+        "body": [
+          "应结合晶轴应变、氧损失和颗粒开裂分析多元素掺杂，而不是仅比较初始容量。",
+          "还需在高面载量、低电解液用量及不同充电上限下评估收益，并核算掺杂与制造成本。"
+        ]
+      },
+      {
+        "heading": "值得思考的问题",
+        "body": [
+          "哪些掺杂元素对抑制高电压相变贡献最大，是否存在协同效应？",
+          "减小 c 轴应变是否足以预测长期颗粒完整性和热安全性？",
+          "在更苛刻的全电池条件下，容量保持率与能量保持率会如何变化？"
+        ]
+      }
+    ]
   }
 ]
