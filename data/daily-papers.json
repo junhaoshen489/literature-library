@@ -1264,5 +1264,64 @@
         ]
       }
     ]
+  },
+  {
+    "id": "2026-11-27-dual-phase-primary-particle",
+    "recommendedOn": "2026-11-27",
+    "title": "Primary-Particle Engineering Enables Durable O2/O3 Dual-Phase Li-Rich Cathodes",
+    "authors": "Yang Ping, Wenjie Yang, Yong Wang, Yu-Shi He, Zi-Feng Ma, Linsen Li",
+    "published": "2026-10-27",
+    "journal": "The Journal of Physical Chemistry Letters, 17(44), 12774–12780",
+    "doi": "10.1021/acs.jpclett.6c02978",
+    "summary": "研究通过调节前驱体煅烧温度控制 O2/O3 双相富锂正极的一次颗粒尺寸，发现颗粒粗化会加剧电压衰减与晶间开裂；优化材料在软包全电池中表现出更好的能量保持。",
+    "sections": [
+      {
+        "heading": "论文基本信息",
+        "body": [
+          "题目：Primary-Particle Engineering Enables Durable O2/O3 Dual-Phase Li-Rich Cathodes。",
+          "作者：Yang Ping、Wenjie Yang、Yong Wang、Yu-Shi He、Zi-Feng Ma、Linsen Li。",
+          "期刊：The Journal of Physical Chemistry Letters，2026，17(44)，12774–12780；在线发表：2026 年 10 月 27 日；DOI：10.1021/acs.jpclett.6c02978。",
+          "研究对象：O2/O3 双相富锂层状氧化物锂电正极，并采用软包全电池检验性能。"
+        ]
+      },
+      {
+        "heading": "核心创新",
+        "body": [
+          "通过将前驱体煅烧温度从 700 调至 900 °C，调控一次颗粒尺寸，同时保留 O2/O3 层状框架。",
+          "将微观颗粒尺度与低电压容量利用、电压衰减及晶间开裂联系起来，说明双相结构的优势也依赖颗粒工程。"
+        ]
+      },
+      {
+        "heading": "关键结论",
+        "body": [
+          "750 °C 优化样品的初始放电容量约为 260 mAh/g，在 0.1 C 下循环 100 次后容量保持率为 83.7%。",
+          "900 °C 时颗粒粗化，低电压容量利用受限，电压衰减加快并产生严重晶间裂纹。",
+          "软包全电池在 0.5 C 下循环 200 次后，优化材料的放电能量保持率为 75.8%。这些数据应结合论文中的电压窗口、电极负载和测试条件比较。"
+        ]
+      },
+      {
+        "heading": "为什么值得读",
+        "body": [
+          "富锂正极的研究常聚焦相结构与氧氧化还原，本文提醒我们颗粒尺寸和机械完整性同样会改变双相材料的实际表现。",
+          "文章同时提供材料尺度与软包全电池数据，适合思考容量保持与能量保持的区别。"
+        ]
+      },
+      {
+        "heading": "后续启发",
+        "body": [
+          "设计双相正极时应将煅烧工艺、一次颗粒尺寸、相结构及裂纹共同优化，而非单独追求更高结晶度。",
+          "可进一步考察颗粒尺寸与电极压实、界面副反应和高面载量之间的耦合。"
+        ]
+      },
+      {
+        "heading": "值得思考的问题",
+        "body": [
+          "煅烧温度除改变粒径外，还可能改变缺陷、组成或相比例；如何设计对照以区分各因素？",
+          "一次颗粒的最优尺寸是否会随电极面载量、倍率和电压窗口改变？",
+          "能量保持改善主要来自电压衰减减缓还是容量保持提升，两者如何定量拆分？",
+          "连续规模化生产时能否稳定控制颗粒尺寸分布并保留双相结构？"
+        ]
+      }
+    ]
   }
 ]
