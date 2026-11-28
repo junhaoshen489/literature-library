@@ -1323,5 +1323,66 @@
         ]
       }
     ]
+  },
+  {
+    "id": "2026-11-28-sald-zrox-lnmo",
+    "recommendedOn": "2026-11-28",
+    "title": "Elucidating the Role of sALD-Deposited ZrOx Coatings on the Electrochemical Performance of LiNi0.5Mn1.5O4 Cathodes",
+    "authors": "Umair Nisar, Nico Huijssen, Diana Chaykina, Fieke van den Bruele, Clementine Warres, Tarek Lutz, Margret Wohlfahrt-Mehrens, Markus Hölzle, Auke Kronemeijer, Peter Axmann, Marilena Mancini",
+    "published": "2026-10-21",
+    "journal": "ACS Applied Energy Materials, 9(21), 14422–14437",
+    "doi": "10.1021/acsaem.6c02561",
+    "summary": "作者利用空间原子层沉积在高电压 LiNi₀.₅Mn₁.₅O₄ 复合电极上制备 ZrOₓ 包覆，系统比较膜厚与工艺速度对界面阻抗和 LNMO/石墨全电池寿命的影响。",
+    "sections": [
+      {
+        "heading": "论文基本信息",
+        "body": [
+          "题目：Elucidating the Role of sALD-Deposited ZrOx Coatings on the Electrochemical Performance of LiNi0.5Mn1.5O4 Cathodes。",
+          "作者：Umair Nisar、Nico Huijssen、Diana Chaykina、Fieke van den Bruele、Clementine Warres、Tarek Lutz、Margret Wohlfahrt-Mehrens、Markus Hölzle、Auke Kronemeijer、Peter Axmann、Marilena Mancini。",
+          "期刊：ACS Applied Energy Materials，2026，9(21)，14422–14437；在线发表：2026 年 10 月 21 日；DOI：10.1021/acsaem.6c02561。",
+          "研究对象为高电压无钴尖晶石 LiNi₀.₅Mn₁.₅O₄（LNMO）正极及 LNMO/石墨电池。"
+        ]
+      },
+      {
+        "heading": "核心创新",
+        "body": [
+          "采用空间原子层沉积（sALD），直接在 LNMO 复合电极上制备纳米 ZrOₓ 包覆，将保护层设计扩展到电极层级。",
+          "同时改变包覆厚度和基底移动速度，考察界面保护、传输阻力与电池寿命之间的关系。",
+          "利用循环后的 X 射线荧光分析检测石墨负极上 Mn、Ni 的沉积，研究正负极串扰。"
+        ]
+      },
+      {
+        "heading": "关键结论",
+        "body": [
+          "较厚的 ZrOₓ 层有利于全电池长期稳定，但也会增加界面电阻，存在保护与动力学之间的取舍。",
+          "在论文测试条件下，3.0 nm 包覆在寿命和倍率性能之间取得较好平衡；相较未包覆 LNMO，电池达到寿命终点的时间延长 71%。",
+          "循环后石墨上的 Mn、Ni 沉积减少，与正负极串扰受到抑制的解释相一致，但这一观察本身不等于对全部失效机制的证明。",
+          "作者还报告将基底移动速度从 10 降至 5 mm/s 可进一步延长寿命；具体收益依赖论文的工艺与测试条件。"
+        ]
+      },
+      {
+        "heading": "为什么值得读",
+        "body": [
+          "高电压 LNMO 的应用受电解液氧化及过渡金属串扰限制；该研究从完整复合电极和全电池的角度评估表面工程。",
+          "文章突出包覆厚度并非越厚越好，为分析寿命提升与倍率损失提供直接例子。"
+        ]
+      },
+      {
+        "heading": "后续启发",
+        "body": [
+          "比较包覆策略时，应同时报告负极金属沉积、界面阻抗及电池能量保持，避免只看半电池容量。",
+          "面向实际制造，还应评估 sALD 在厚电极中的穿透与均匀性、产线速度、成本和重复性。"
+        ]
+      },
+      {
+        "heading": "值得思考的问题",
+        "body": [
+          "3.0 nm 的最优厚度是否随电极孔隙率、面载量、电解液配方和倍率而变化？",
+          "包覆对过渡金属溶解、迁移和负极沉积各环节分别有多大影响？",
+          "降低基底移动速度提高寿命时，会如何影响沉积均匀性、生产效率和成本？",
+          "长期循环和高温储存后，ZrOₓ 层及正极电解液界面的化学组成如何变化？"
+        ]
+      }
+    ]
   }
 ]
